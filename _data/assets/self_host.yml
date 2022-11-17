@@ -51,5 +51,5 @@ mathjax:
   js: /assets/lib/mathjax-3.2.0/tex-chtml.js
 
 leaflet:
-  js: https://cdn.jsdelivr.net/npm/leaflet@1.9.2/dist/leaflet-src.min.js
-  css: https://cdn.jsdelivr.net/npm/leaflet@1.9.2/dist/leaflet.css
+  js: /assets/lib/leaflet-1.9.2/dist/leaflet-src.min.js
+  css: /assets/lib/leaflet-1.9.2/dist/leaflet.css
