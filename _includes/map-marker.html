@@ -1,0 +1,11 @@
+<script>
+
+L.marker(
+    [ {{include.location.latitude}}, {{include.location.longitude}} ],
+    {{ include.options }}
+)
+    .addTo( maps[ "{{ include.mapid }}" ] )
+    .bindPopup( "{{ include.popup.content }}" )
+    .on('click', function(e) { window.open( "{{ include.popup.url | relative_url}}",'_self'); } )
+    
+</script>

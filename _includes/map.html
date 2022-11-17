@@ -1,0 +1,20 @@
+<div id="leaflet-map-{{ include.id }}" class="leaflet-map"></div>
+
+<script>
+    if( !maps ) {
+        var maps = {};
+    }
+    let mapID = "{{ include.id }}"
+    let mapOptions = {};
+    try {
+        mapOptions = JSON.parse( "{{ include.options }}" );
+    }catch( e ) {
+        console.error(e);
+    }
+
+    maps[ mapID ] = new L.Map("leaflet-map-{{ include.id }}", mapOptions);
+    L.tileLayer(
+        "{{ include.url }}"
+    ).addTo(map);
+</script>
+
