@@ -1,5 +1,5 @@
 ---
-title: "Gilda dei Draghi Bronzei - Organizzazione"
+title: 'Gilda dei Draghi Bronzei'
 author: cotes
 date: 2022-11-17 10:40:20 +0200
 categories: [Organizations, Gilds]
@@ -16,9 +16,9 @@ location:
 
 La gilda è stata ufficialmente fondata nel 1756 a Bariatheel da Kerion Placidanimo e la sua piccola compagnia di avventurieri. Da allora si occupano di aiutare la popolazione di Grimor, e non, sotto compenso. Tale compenso può avvenire sia sotto natura monetaria ma, se nel caso ciò non fosse possibile, anche attraverso altri beni materiali.
 
-
 **Capo**
 : Eberon, regnante di Bariatheel
+
 **Membri degni di Noti**
 - Rochelle Biancospino
 
@@ -32,16 +32,41 @@ Per accedere all'interno della gilda è necessario prima effettuare un test per 
 La gerarchia della gilda è a base piramidale suddivisa nei seguenti livelli:
 
 <ol type="I">
-    <li>**Livello (novizio)**:
-    : Alla base della gilda vi sono coloro che sono riusciti a superare i test d'ingresso, a loro sono affidati la maggior parte degli incarichi della gilda che vanno generalmente dal ripulire un area da alcune creature ostili all'indagine di avvenimenti insoliti*. In questo grado non vi sono particolari benefici se non la possibilità di alloggiare all'interno della locanda "Salamandra Infuocata" e di ricevere un piccolo sconto alla bottega di Ignus. Ovviamente il rientrare all'interno di una gilda permette ai membri un certo grado di tutela personale e di protezione da possibili persecuzioni. (che vannno ben oltre il banale "sei x e non mi piaci.")</li>
-    <li>**Livello (Discepolo del drago)**:
-    :Al secondo livello vi sono coloro che sono stati presi in considerazione come possibili "Figli del drago", essi si sono dimostrati ammirevoli e sono usciti da diverse situazioni spinose in maniera dignitosa. Sono stati riconosciuti tali da un membro di III° Livello e, in accordo con un altro membro di grado superiore, si è deciso di tenerlo maggiormente sotto osservazione e di farlo seguire da un membro di grado più elevato. In questo grado si ottiene un alloggio nel quartiere residenziale della gilda, un maggiore sconto da Ignus ed in alcuni negozi del luogo. Oltre a ciò si ottiene il permesso di accedere ad alcune riunioni della gilda, se accompagnati dal proprio mentore ed un emblema della gilda a dimostrazione del fatto che si è qualcosa di più di un membro come molti altri..</li>
-    <li>**Livello (Portatore della volontà del drago)**: 
-    :Al terzo livello vi sono coloro dove dimostrazione dei propri valori morali e della propria volontà non è necessaria, hanno già svolto molte imprese pericolose per la gilda ed hanno agito in nome del prossimo, spesso tendono ad agire in gruppi piccoli o singolarmente. Accedono alla quasi totalità degli incarichi. Spesso la notorietà di questi individui è nota a molti o, se non lo è, è per loro scelta o indole (Per esempio, Frida è decisamente ben nota all'interno delle figure facenti parti dello staff medico di Bariatheel ma non lo è per le altre normali persone dato che le sue gesta, seppur di natura nobile, tendono ad essere di minor entità e meno note). Tuttavia accedere a questo grado...</li>
-    <li>**Livello (Figlio del drago)**: 
-    :Al quarto livello fanno parte solamente coloro ritenuti meritevoli da Eberon in persona, essi tendono a compiere azioni di importanza vitale per la gilda stessa o per la salvaguardia del prossimo. Giungere a questo livello comporta un impegno totale all'interno della gilda e per l'aiuto del prossimo (No, Lothair non è di IV°).</li>
-    <li>**Livello (Emh...)**: 
-    :...serve davvero che dica chi e cosa sia?</li>
+<li>
+
+**Livello (novizio)**:
+: Alla base della gilda vi sono coloro che sono riusciti a superare i test d'ingresso, a loro sono affidati la maggior parte degli incarichi della gilda che vanno generalmente dal ripulire un area da alcune creature ostili all'indagine di avvenimenti insoliti*. In questo grado non vi sono particolari benefici se non la possibilità di alloggiare all'interno della locanda "Salamandra Infuocata" e di ricevere un piccolo sconto alla bottega di Ignus. Ovviamente il rientrare all'interno di una gilda permette ai membri un certo grado di tutela personale e di protezione da possibili persecuzioni. (che vannno ben oltre il banale "sei x e non mi piaci.")
+
+</li>
+
+<li>
+
+**Livello (Discepolo del drago)**:
+:Al secondo livello vi sono coloro che sono stati presi in considerazione come possibili "Figli del drago", essi si sono dimostrati ammirevoli e sono usciti da diverse situazioni spinose in maniera dignitosa. Sono stati riconosciuti tali da un membro di III° Livello e, in accordo con un altro membro di grado superiore, si è deciso di tenerlo maggiormente sotto osservazione e di farlo seguire da un membro di grado più elevato. In questo grado si ottiene un alloggio nel quartiere residenziale della gilda, un maggiore sconto da Ignus ed in alcuni negozi del luogo. Oltre a ciò si ottiene il permesso di accedere ad alcune riunioni della gilda, se accompagnati dal proprio mentore ed un emblema della gilda a dimostrazione del fatto che si è qualcosa di più di un membro come molti altri...
+
+</li>
+
+<li>
+
+**Livello (Portatore della volontà del drago)**: 
+:Al terzo livello vi sono coloro dove dimostrazione dei propri valori morali e della propria volontà non è necessaria, hanno già svolto molte imprese pericolose per la gilda ed hanno agito in nome del prossimo, spesso tendono ad agire in gruppi piccoli o singolarmente. Accedono alla quasi totalità degli incarichi. Spesso la notorietà di questi individui è nota a molti o, se non lo è, è per loro scelta o indole (Per esempio, Frida è decisamente ben nota all'interno delle figure facenti parti dello staff medico di Bariatheel ma non lo è per le altre normali persone dato che le sue gesta, seppur di natura nobile, tendono ad essere di minor entità e meno note). Tuttavia accedere a questo grado...
+
+</li>
+
+<li>
+
+**Livello (Figlio del drago)**: 
+:Al quarto livello fanno parte solamente coloro ritenuti meritevoli da Eberon in persona, essi tendono a compiere azioni di importanza vitale per la gilda stessa o per la salvaguardia del prossimo. Giungere a questo livello comporta un impegno totale all'interno della gilda e per l'aiuto del prossimo (No, Lothair non è di IV°).
+
+</li>
+
+<li>
+
+**Livello (Emh...)**: 
+:...serve davvero che dica chi e cosa sia?
+
+</li>
+
 </ol>
 
 RAPPORTI CON LA CORONA E L'ESERCITO
