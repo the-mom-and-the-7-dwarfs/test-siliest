@@ -4,30 +4,16 @@ author: cotes
 date: 2022-11-16 20:20:20 +0200
 categories: [Place, City]
 tags: [grimor, marirines]
-image:
-  path: /commons/devices-mockup.png
-  width: 800
-  height: 500
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+location:
+  state: Grimor
+  region: Bariatheel
+map_data: 
+  providerBasemap": local
+  variant: bariatheel
+  center: [ 1143, 1312.5 ]
+  zoom: 0
+  zoomSnap: 0.25
 ---
-
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
-
-## Titles
----
-# H1 - heading
-
-<h2 data-toc-skip>H2 - heading</h2>
-
-<h3 data-toc-skip>H3 - heading</h3>
-
-<h4>H4 - heading</h4>
----
-<br>
-
-## Paragraph
-
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt bibendum rutrum. Proin commodo ornare sapien. Vivamus interdum diam sed sapien blandit, sit amet aliquam risus mattis. Nullam arcu turpis, mollis quis laoreet at, placerat id nibh. Suspendisse venenatis eros eros.
 
 ## Storia recente
 
@@ -52,4 +38,37 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
 
 ## Mappa
 
-WIP
+<script>
+  
+L.TileLayer.Provider.providers[ "local" ] = {
+  url: "./{variant}",
+  options: {
+    maxZoom: 19,
+    attribution: false
+  }
+  variants: {}
+}
+
+L.TileLayer.Provider.providers[ "local" ].variants[ "bariatheel" ] = {
+  url: 'https://www.worldanvil.com/uploads/maps/332dfdead036a200342f5c4a7a4b8c6d.png',
+  options: {
+    maxZoom: 19,
+    attribution: false
+    bounds: [[0,0], [2286,2625]]
+  }
+}
+
+</script>
+
+{% leaflet_map {{ map_data }} %}
+  {%- for post in site.posts -%}
+    {% if post.location is defined and post.location.state == location.state and post.location.region == location.region and post.title != title %}
+      {% if post.location.geojson %}
+          {% leaflet_geojson {{post.location.geojson}} %}
+      {% elsif post.location.latitude and post.location.longitude %}
+          {% leaflet_marker { "latitude" : {{post.location.latitude}},
+                              "longitude" : {{post.location.longitude}} } %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endleaflet_map %}
