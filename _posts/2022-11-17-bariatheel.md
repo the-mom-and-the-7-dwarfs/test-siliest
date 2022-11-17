@@ -2,17 +2,13 @@
 title: Bariatheel
 author: cotes
 date: 2022-11-17 20:20:20 +0800
-categories: [place, city]
-tags: [grimor, marirines]     # TAG names should always be lowercase
-location:
-  state: Grimor
-  region: Bariatheel
-map_data: 
-  providerBasemap": local
-  variant: bariatheel
-  center: [ 1143, 1312.5 ]
-  zoom: 0
-  zoomSnap: 0.25
+categories: [Places, cities]
+tags: [grimor, marirines]
+image:
+  path: /commons/devices-mockup.png
+  width: 800
+  height: 500
+  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
 ## Storia recente
