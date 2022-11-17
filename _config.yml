@@ -22,12 +22,12 @@ timezone: Europe/Rome
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: The Legacy of Darb Banana                          # the main title
+title: The Legacy of Darb Banana  # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: A Dungeons & Dragons 5e campaign  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  A campaugn wiki about lore and player notes.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
@@ -118,7 +118,7 @@ assets:
     env: development          # [development|production]
 
 pwa:
-  enabled: true   # the option for PWA feature
+  enabled: false   # the option for PWA feature
 
 paginate: 10
 
