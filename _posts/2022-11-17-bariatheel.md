@@ -2,8 +2,11 @@
 title: Bariatheel
 author: cotes
 date: 2022-11-17 20:20:20 +0800
-categories: [Places, cities]
-tags: [grimor, marirines]
+categories: [place, city]
+tags: [grimor, marirines]     # TAG names should always be lowercase
+location:
+  state: Grimor
+  region: Bariatheel
 image:
   path: /commons/devices-mockup.png
   width: 800
