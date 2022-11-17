@@ -2,7 +2,8 @@
 
 <script>
 ((mapID, mapOptions, mapSrc) => {
-    if( !maps ) { var maps = {}; }
+    if( !L.my_map ) L.my_maps = {};
+    let maps = L.my_maps;
 
     maps[ mapID ] = new L.Map( "leaflet-map-" + mapID , mapOptions);
     L.tileLayer(
