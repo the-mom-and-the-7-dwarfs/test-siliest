@@ -9,8 +9,9 @@ location:
   region: Bariatheel
   latitude: 63.0694
   longitude: -151.0074
-  popupContent : 'Salamandra ubriaca - Taverna, Taverna della gilda dei Draghi Bronzei, gestita da Killian e, quand'esso non è presente, Pherin.'
+  popupContent: Salamandra ubriaca
 ---
+
 
 La gilda è stata ufficialmente fondata nel 1756 a Bariatheel da Kerion Placidanimo e la sua piccola compagnia di avventurieri. Da allora si occupano di aiutare la popolazione di Grimor, e non, sotto compenso. Tale compenso può avvenire sia sotto natura monetaria ma, se nel caso ciò non fosse possibile, anche attraverso altri beni materiali.
 
