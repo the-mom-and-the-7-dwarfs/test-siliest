@@ -1,20 +1,14 @@
 <div id="leaflet-map-{{ include.id }}" class="leaflet-map"></div>
 
 <script>
-    if( !maps ) {
-        var maps = {};
-    }
-    let mapID = "{{ include.id }}"
-    let mapOptions = {};
-    try {
-        mapOptions = JSON.parse( "{{ include.options }}" );
-    }catch( e ) {
-        console.error(e);
-    }
+((mapID, mapOptions, mapSrc) => {
+    if( !maps ) { var maps = {}; }
 
-    maps[ mapID ] = new L.Map("leaflet-map-{{ include.id }}", mapOptions);
+    maps[ mapID ] = new L.Map( "leaflet-map-" + mapID , mapOptions);
     L.tileLayer(
-        "{{ include.url }}"
+        mapSrc
     ).addTo(map);
+
+})( "{{ include.id }}", {{ include.options | jsonify }}, "{{ include.url }}" );
 </script>
 

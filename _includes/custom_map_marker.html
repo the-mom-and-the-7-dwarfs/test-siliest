@@ -1,11 +1,18 @@
 <script>
+((map, location, options, popup) => {
+    if( !map ) return;
 
-L.marker(
-    [ {{include.location.latitude}}, {{include.location.longitude}} ],
-    {{ include.options }}
-)
-    .addTo( maps[ "{{ include.mapid }}" ] )
-    .bindPopup( "{{ include.popup.content }}" )
-    .on('click', function(e) { window.open( "{{ include.popup.url | relative_url}}",'_self'); } )
-    
+    L.marker(
+        [ location.latitude, location.longitude ],
+        options
+    )
+        .addTo( map )
+        .bindPopup( popup.content )
+        .on('click', function(e) { window.open( popup.url ,'_self'); } )
+})(
+    maps[ "{{ include.mapid }}" ],
+    { "latitude": {{ include.location.latitude }}, longitude: {{ include.location.longitude }} },
+    {{ include.options }},
+    { "url": "{{ include.popup.url | relative_url }}", "content": "{{ include.popup.content }}" }
+);
 </script>
