@@ -1,7 +1,7 @@
 ---
 title: Bariatheel
 author: cotes
-date: 2022-10-17 20:20:20 +0800
+date: 2022-11-17 20:20:20 +0000
 categories: [Place, City]
 tags: [grimor, marirines]
 image:
