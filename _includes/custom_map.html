@@ -7,7 +7,7 @@
     maps[ mapID ] = new L.Map( "leaflet-map-" + mapID , mapOptions);
     L.tileLayer(
         mapSrc
-    ).addTo(map);
+    ).addTo( maps[ mapID ] );
 
 })( "{{ include.id }}", {{ include.options | jsonify }}, "{{ include.url }}" );
 </script>
