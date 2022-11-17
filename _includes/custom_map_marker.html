@@ -11,8 +11,8 @@
         .on('click', function(e) { window.open( popup.url ,'_self'); } )
 })(
     maps[ "{{ include.mapid }}" ],
-    { "latitude": {{ include.location.latitude }}, longitude: {{ include.location.longitude }} },
-    {{ include.options }},
+    { "latitude": {{ include.location.latitude }}, "longitude": {{ include.location.longitude }} },
+    {{ include.options | jsonify }},
     { "url": "{{ include.popup.url | relative_url }}", "content": "{{ include.popup.content }}" }
 );
 </script>
