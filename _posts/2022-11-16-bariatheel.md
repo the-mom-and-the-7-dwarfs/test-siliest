@@ -9,9 +9,9 @@ location:
   region: Bariatheel
   latitude : 48.7596
   longitude : -113.787
-  popupContent : "test marker"
+  popupContent : 'test marker'
 map_data: 
-  providerBasemap": OpenTopoMap
+  providerBasemap: OpenTopoMap
   center : [63.0694,  -151.0074]
   zoom : 7
  # variant: bariatheel
@@ -65,9 +65,9 @@ L.TileLayer.Provider.providers[ "local" ].variants[ "bariatheel" ] = {
 
 </script>
 
-{% leaflet_map {{ map_data }} %}
+{% leaflet_map {{map_data}} %}
   {%- for post in site.posts -%}
-    {% if post.location and post.location.state == location.state and post.location.region == location.region and post.title != title %}
+    {% if post.location and post.location.state == location.state and post.location.region == location.region and not( post.title == title ) %}
       {% if post.location.geojson %}
           {% leaflet_geojson {{post.location.geojson}} %}
       {% elsif post.location.latitude and post.location.longitude %}
