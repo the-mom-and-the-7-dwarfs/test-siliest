@@ -7,13 +7,13 @@ tags: [grimor, marirines]
 location:
   state: Grimor
   region: Bariatheel
-  latitude : 48.7596
-  longitude : -113.787
-  popupContent : 'test marker'
+  latitude: 48.7596
+  longitude: -113.787
+  popupContent: 'test marker'
 map_data: 
   providerBasemap: OpenTopoMap
-  center : [63.0694,  -151.0074]
-  zoom : 7
+  center: [63.0694,  -151.0074]
+  zoom: 7
  # variant: bariatheel
  # center: [ 1143, 1312.5 ]
  # zoom: 0
