@@ -36,13 +36,13 @@ La gerarchia della gilda è a base piramidale suddivisa nei seguenti livelli:
 2. ° **Livello (Discepolo del drago)**
   : Al secondo livello vi sono coloro che sono stati presi in considerazione come possibili "Figli del drago", essi si sono dimostrati ammirevoli e sono usciti da diverse situazioni spinose in maniera dignitosa. Sono stati riconosciuti tali da un membro di III° Livello e, in accordo con un altro membro di grado superiore, si è deciso di tenerlo maggiormente sotto osservazione e di farlo seguire da un membro di grado più elevato. In questo grado si ottiene un alloggio nel quartiere residenziale della gilda, un maggiore sconto da Ignus ed in alcuni negozi del luogo. Oltre a ciò si ottiene il permesso di accedere ad alcune riunioni della gilda, se accompagnati dal proprio mentore ed un emblema della gilda a dimostrazione del fatto che si è qualcosa di più di un membro come molti altri...
 
-3. **Livello (Portatore della volontà del drago)**
+3. ° **Livello (Portatore della volontà del drago)**
   : Al terzo livello vi sono coloro dove dimostrazione dei propri valori morali e della propria volontà non è necessaria, hanno già svolto molte imprese pericolose per la gilda ed hanno agito in nome del prossimo, spesso tendono ad agire in gruppi piccoli o singolarmente. Accedono alla quasi totalità degli incarichi. Spesso la notorietà di questi individui è nota a molti o, se non lo è, è per loro scelta o indole (Per esempio, Frida è decisamente ben nota all'interno delle figure facenti parti dello staff medico di Bariatheel ma non lo è per le altre normali persone dato che le sue gesta, seppur di natura nobile, tendono ad essere di minor entità e meno note). Tuttavia accedere a questo grado...
 
-4. **Livello (Figlio del drago)**
+4. ° **Livello (Figlio del drago)**
   : Al quarto livello fanno parte solamente coloro ritenuti meritevoli da Eberon in persona, essi tendono a compiere azioni di importanza vitale per la gilda stessa o per la salvaguardia del prossimo. Giungere a questo livello comporta un impegno totale all'interno della gilda e per l'aiuto del prossimo (No, Lothair non è di IV°).
 
-5. **Livello (Emh...)**
+5. ° **Livello (Emh...)**
   : ...serve davvero che dica chi e cosa sia?
 
 RAPPORTI CON LA CORONA E L'ESERCITO
