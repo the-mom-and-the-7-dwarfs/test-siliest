@@ -1,12 +1,9 @@
 ---
 title: Bariatheel
 author: cotes
-date: 2022-11-17 20:20:20 +0800
-categories: [place, city]
+date: 2022-10-17 20:20:20 +0800
+categories: [Place, City]
 tags: [grimor, marirines]
-location:
-  state: Grimor
-  region: Bariatheel
 image:
   path: /commons/devices-mockup.png
   width: 800
@@ -15,7 +12,6 @@ image:
 ---
 
 This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
-
 
 ## Titles
 ---
