@@ -38,37 +38,4 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
 
 ## Mappa
 
-<script>
-  
-L.TileLayer.Provider.providers[ "local" ] = {
-  url: "./{variant}",
-  options: {
-    maxZoom: 19,
-    attribution: false
-  }
-  variants: {}
-}
-
-L.TileLayer.Provider.providers[ "local" ].variants[ "bariatheel" ] = {
-  url: 'https://www.worldanvil.com/uploads/maps/332dfdead036a200342f5c4a7a4b8c6d.png',
-  options: {
-    maxZoom: 19,
-    attribution: false
-    bounds: [[0,0], [2286,2625]]
-  }
-}
-
-</script>
-
-{% leaflet_map {{ map_data }} %}
-  {%- for post in site.posts -%}
-    {% if post.location.state == location.state and post.location.region == location.region and post.title != title %}
-      {% if post.location.geojson %}
-          {% leaflet_geojson {{post.location.geojson}} %}
-      {% elsif post.location.latitude and post.location.longitude %}
-          {% leaflet_marker { "latitude" : {{post.location.latitude}},
-                              "longitude" : {{post.location.longitude}} } %}
-    {% endif %}
-      {% endif %}
-  {% endfor %}
-{% endleaflet_map %}
+WIP
