@@ -1,5 +1,5 @@
 ---
-title: Gilda dei Draghi Bronzei - Organizzazione
+title: "Gilda dei Draghi Bronzei - Organizzazione"
 author: cotes
 date: 2022-11-17 10:40:20 +0200
 categories: [Organizations, Gilds]
