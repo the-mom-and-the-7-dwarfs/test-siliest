@@ -1,5 +1,6 @@
 ---
 title: Bariatheel
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [place, city]
 tags: [grimor, marirines]     # TAG names should always be lowercase
 location:
