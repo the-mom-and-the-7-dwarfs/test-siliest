@@ -1,6 +1,6 @@
 ---
 title: Bariatheel
-date: 2022-11-17 20:20:20 +/-0000
+date: 2022-11-17 20:20:20 +0000
 categories: [place, city]
 tags: [grimor, marirines]     # TAG names should always be lowercase
 location:
