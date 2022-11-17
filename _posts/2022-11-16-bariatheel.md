@@ -62,7 +62,7 @@ L.TileLayer.Provider.providers[ "local" ].variants[ "bariatheel" ] = {
 
 {% leaflet_map {{ map_data }} %}
   {%- for post in site.posts -%}
-    {% if post.location is defined and post.location.state == location.state and post.location.region == location.region and post.title != title %}
+    {% if post.location and post.location.state == location.state and post.location.region == location.region and post.title != title %}
       {% if post.location.geojson %}
           {% leaflet_geojson {{post.location.geojson}} %}
       {% elsif post.location.latitude and post.location.longitude %}
