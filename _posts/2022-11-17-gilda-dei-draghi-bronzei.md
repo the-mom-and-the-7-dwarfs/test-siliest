@@ -1,5 +1,5 @@
 ---
-title: 'Gilda dei Draghi Bronzei'
+title: Gilda dei Draghi Bronzei
 author: cotes
 date: 2022-11-17 10:40:20 +0200
 categories: [Organizations, Gilds]
@@ -7,11 +7,13 @@ tags: [grimor, bariatheel]
 location:
   state: Grimor
   region: Bariatheel
-  latitude: 63.0694 #  latitude : 1063
-  longitude: -151.0074  #  longitude : 1252
+  latitude: 63.0694 
+  longitude: -151.0074  
   popupContent : "<div class="marker-content"> <h5>Salamandra ubriaca - Taverna </h5>
                  <p class="description">Taverna della gilda dei Draghi Bronzei, gestita da Killian e, quand'esso non è presente, Pherin. </p>
                 </div>"
+#  latitude : 1063
+#  longitude : 1252
 ---
 
 La gilda è stata ufficialmente fondata nel 1756 a Bariatheel da Kerion Placidanimo e la sua piccola compagnia di avventurieri. Da allora si occupano di aiutare la popolazione di Grimor, e non, sotto compenso. Tale compenso può avvenire sia sotto natura monetaria ma, se nel caso ciò non fosse possibile, anche attraverso altri beni materiali.
