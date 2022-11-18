@@ -7,9 +7,6 @@ tags: [grimor, bariatheel]
 location:
   state: Grimor
   region: Bariatheel
-  latitude: 63.0694
-  longitude: -151.0074
-  popupContent: Salamandra ubriaca
 POIs:
   - type: Feature
     properties:

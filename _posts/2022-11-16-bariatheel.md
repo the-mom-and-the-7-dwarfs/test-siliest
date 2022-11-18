@@ -4,7 +4,7 @@ author: cotes
 date: 2022-11-16 20:20:20 +0200
 categories: [Place, City]
 tags: [grimor, marirines]
-location:
+geojson:
   type: Feature
   properties:  
     state: Grimor
@@ -18,6 +18,7 @@ location:
     coordinates: [1136, 1334]
 
 map_data: 
+  id: 'Bariatheel'
   url: 'https://www.worldanvil.com/uploads/maps/332dfdead036a200342f5c4a7a4b8c6d.png'
   options:
     center: [1143, 1312.5]
@@ -48,15 +49,14 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
 ## Mappa
 
 
-{% leaflet_map {"zoom" : 13 } %}
-  {%- for post in site.posts -%}
-    {% if post.location %}
-      {% if post.location.geojson %}
-          {% leaflet_geojson {{post.location.geojson}} %}
-      {% elsif post.location.latitude and post.location.longitude %}
-          {% leaflet_marker { "latitude" : {{post.location.latitude}},
-                              "longitude" : {{post.location.longitude}} } %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-{% endleaflet_map %}
+{% include custom_map.html  id=page.myMap.id url=page.myMap.url options=page.myMap.options %}
+
+{%- for post in site.posts -%}
+  {% if post.location and post.location.state == page.geojson.properties.state and post.location.region == page.geojson.properties.name %}
+    {%- for POI in post.POIs -%}
+
+      {% include custom_map_marker.html mapid=page.map_data.id geojson=POI %}
+      
+    {% endfor %}
+  {% endif %}
+{% endfor %}
