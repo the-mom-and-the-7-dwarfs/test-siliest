@@ -14,9 +14,7 @@ geojson:
     description: 'La città più antica e grande di Grimor nonchè la sua la capitale politica ed economica.'
   geometry:
     type: Point
-    # latitude, longitude
     coordinates: [1136, 1334]
-
 map_data: 
   id: 'Bariatheel'
   url: 'https://www.worldanvil.com/uploads/maps/332dfdead036a200342f5c4a7a4b8c6d.png'
@@ -49,10 +47,10 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
 ## Mappa
 
 
-{% include custom_map.html  id=page.map_data.id url=page.map_data.url options=page.map_data.options %}
+{% include custom_map.html id=page.map_data.id url=page.map_data.url options=page.map_data.options %}
 
 {%- for post in site.posts -%}
-  {% if post.location and post.location.state == page.geojson.properties.state and post.location.region == page.geojson.properties.name %}
+  {% if post.POIs and post.location and post.location.state == page.geojson.properties.state and post.location.region == page.geojson.properties.name %}
     {%- for POI in post.POIs -%}
 
       {% include custom_map_marker.html mapid=page.map_data.id geoJSONFeature=POI url=post.url %}
