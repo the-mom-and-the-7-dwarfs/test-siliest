@@ -1,18 +1,34 @@
 <script>
-((map, location, options, popup) => {
+((map, geoJSONFeature, url) => {
     if( !map ) return;
 
-    L.marker(
-        [ location.latitude, location.longitude ],
-        options
-    )
-        .addTo( map )
-        .bindPopup( popup.content )
-        .on('click', function(e) { window.open( popup.url ,'_self'); } )
+    L.geoJSON(geoJSONFeature, {
+        style: function (feature) {
+            return {color: feature.properties.color};
+        },
+        pointToLayer: function(geoJSONPoint, latlng) {
+            const geometryType = geoJSONFeature.geometry.type.toLower();
+            switch( geometryType ) {
+                case 'point':
+                default:
+                    return L.marker(latlng);
+                    break;
+            }
+        }
+    })
+    .bindPopup(function (layer) {
+        return
+        `<div class="marker-content">
+            <h5 class="marker-title"><a href="${url}" data-proofer-ignore >${ layer.feature.properties.name }</a></h5>
+            <p class="marker-description">${ layer.feature.properties.description }</p>
+        </div>`;
+    })
+    .on('mouseover', function (e) { this.openPopup(); })
+    .addTo(map);
+
 })(
     L.my_maps[ "{{ include.mapid }}" ],
-    { "latitude": {{ include.location.latitude }}, "longitude": {{ include.location.longitude }} },
-    {{ include.options | jsonify }},
-    { "url": "{{ include.popup.url | relative_url }}", "content": "{{ include.popup.content }}" }
+    {{ include.geoJSONFeature | jsonify }},
+    "{{ include.url | relative_url }}"
 );
 </script>
