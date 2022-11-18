@@ -14,7 +14,7 @@ geojson:
     description: 'La città più antica e grande di Grimor nonchè la sua la capitale politica ed economica.'
   geometry:
     type: Point
-    coordinates: [1136, 1334]
+    coordinates: [0, 0]
 map_data: 
   id: 'Bariatheel'
   url: 'https://www.worldanvil.com/uploads/maps/332dfdead036a200342f5c4a7a4b8c6d.png'
