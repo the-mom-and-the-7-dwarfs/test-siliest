@@ -46,6 +46,12 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
 
 ## Mappa
 
+<style>
+.leaflet-map {
+  width: auto;
+  height: 30rem;
+}
+</style>
 
 {% include custom_map.html id=page.map_data.id url=page.map_data.url options=page.map_data.options %}
 
