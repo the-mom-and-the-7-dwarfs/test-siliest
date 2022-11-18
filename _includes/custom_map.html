@@ -1,14 +1,19 @@
 <div id="leaflet-map-{{ include.id }}" class="leaflet-map"></div>
 
 <script>
-((mapID, mapOptions, mapSrc) => {
+((mapID, mapOptions, mapSrc, mapBounds) => {
     if( !L.my_map ) L.my_maps = {};
-    let maps = L.my_maps;
+    let map = new L.Map( "leaflet-map-" + mapID , mapOptions); 
+    L.my_maps[ mapID ] = map;
 
-    maps[ mapID ] = new L.Map( "leaflet-map-" + mapID , mapOptions);
-    L.tileLayer(
-        mapSrc
-    ).addTo( maps[ mapID ] );
+    let img = new Image();
+    img.onload = function(){
+        L.imageOverlay(
+            mapSrc,
+            [[0,0], [img.height, img.width]]
+        ).addTo( map );
+    };
+    img.src = mapSrc;
 
 })( "{{ include.id }}", {{ include.options | jsonify }}, "{{ include.url }}" );
 </script>
