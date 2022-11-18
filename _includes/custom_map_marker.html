@@ -1,5 +1,7 @@
+
+{% if isMapMarkerSrcPresent != true %}
 <script>
-((map, geoJSONFeature, url) => {
+function addMarker(map, geoJSONFeature, url){
     if( !map ) return;
 
     L.geoJSON(geoJSONFeature, {
@@ -26,9 +28,15 @@
     .on('mouseover', function (e) { this.openPopup(); })
     .addTo(map);
 
-})(
+};
+</script>
+{% assign isMapMarkerSrcPresent = true %}
+{% endif %}
+
+<script>
+addMarker(
     L.my_maps[ "{{ include.mapid }}" ],
     {{ include.geoJSONFeature | jsonify }},
     "{{ include.url | relative_url }}"
-);
+)
 </script>
