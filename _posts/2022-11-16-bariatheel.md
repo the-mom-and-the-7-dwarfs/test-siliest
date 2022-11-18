@@ -21,6 +21,9 @@ map_data:
   options:
     center: [1143, 1312.5]
     zoom: 0
+    zoomSnap: 0.25
+    minZoom: -2
+    maxZoom: -1
 ---
 
 ## Storia recente
