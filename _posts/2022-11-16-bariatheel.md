@@ -55,7 +55,7 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
   {% if post.location and post.location.state == page.geojson.properties.state and post.location.region == page.geojson.properties.name %}
     {%- for POI in post.POIs -%}
 
-      {% include custom_map_marker.html mapid=page.map_data.id geojson=POI %}
+      {% include custom_map_marker.html mapid=page.map_data.id geoJSONFeature=POI url=post.url %}
       
     {% endfor %}
   {% endif %}
