@@ -10,10 +10,9 @@
     }, mapOptions );
     let img = new Image();
     img.onload = function(){
-        L.imageOverlay(
-            mapSrc,
-            [[0,0], [img.height, img.width]]
-        ).addTo( map );
+        let bounds = [[0,0], [img.height, img.width]];
+        L.imageOverlay( mapSrc, bounds ).addTo( map );
+        map.fitBounds( bounds );
     };
     img.src = mapSrc;
 
