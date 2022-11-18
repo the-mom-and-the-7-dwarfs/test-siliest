@@ -49,7 +49,7 @@ stanno causando un aumento sempre più rapido del malcontento: ormai è solo que
 ## Mappa
 
 
-{% include custom_map.html  id=page.myMap.id url=page.myMap.url options=page.myMap.options %}
+{% include custom_map.html  id=page.map_data.id url=page.map_data.url options=page.map_data.options %}
 
 {%- for post in site.posts -%}
   {% if post.location and post.location.state == page.geojson.properties.state and post.location.region == page.geojson.properties.name %}
