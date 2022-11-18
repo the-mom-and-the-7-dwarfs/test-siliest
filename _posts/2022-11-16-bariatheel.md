@@ -5,19 +5,23 @@ date: 2022-11-16 20:20:20 +0200
 categories: [Place, City]
 tags: [grimor, marirines]
 location:
-  state: Grimor
-  region: Bariatheel
-  latitude: 48.7596
-  longitude: -113.787
-  popupContent: 'test marker'
+  type: Feature
+  properties:  
+    state: Grimor
+    region: 'Bariatheel'
+    name: 'Bariatheel'
+    amenity: 'Città'
+    popupContent: 'La città più antica e grande di Grimor nonchè la sua la capitale politica ed economica.'
+  geometry:
+    type: Point
+    # latitude, longitude
+    coordinates: [1136, 1334]
+
 map_data: 
-  providerBasemap: OpenTopoMap
-  center: [63.0694,  -151.0074]
-  zoom: 7
- # variant: bariatheel
- # center: [ 1143, 1312.5 ]
- # zoom: 0
- # zoomSnap: 0.25
+  url: 'https://www.worldanvil.com/uploads/maps/332dfdead036a200342f5c4a7a4b8c6d.png'
+  options:
+    center: [1143, 1312.5]
+    zoom: 0
 ---
 
 ## Storia recente
