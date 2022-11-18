@@ -9,7 +9,7 @@ function addMarker(map, geoJSONFeature, url){
             return {color: feature.properties.color};
         },
         pointToLayer: function(geoJSONPoint, latlng) {
-            const geometryType = geoJSONFeature.geometry.type.toLower();
+            const geometryType = geoJSONFeature.geometry.type.toLowerCase();
             switch( geometryType ) {
                 case 'point':
                 default:
@@ -18,13 +18,12 @@ function addMarker(map, geoJSONFeature, url){
             }
         }
     })
-    .bindPopup(function (layer) {
-        return
+    .bindPopup((layer) =>
         `<div class="marker-content">
             <h5 class="marker-title"><a href="${url}" data-proofer-ignore >${ layer.feature.properties.name }</a></h5>
             <p class="marker-description">${ layer.feature.properties.description }</p>
-        </div>`;
-    })
+        </div>`
+    )
     .on('mouseover', function (e) { this.openPopup(); })
     .addTo(map);
 

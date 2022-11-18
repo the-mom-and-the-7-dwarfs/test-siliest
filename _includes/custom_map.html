@@ -3,16 +3,17 @@
 <script>
 ((mapID, mapOptions, mapSrc) => {
     if( !L.my_map ) L.my_maps = {};
-    let map = new L.Map( "leaflet-map-" + mapID , mapOptions); 
-    L.my_maps[ mapID ] = map;
+    
     mapOptions = Object.assign({
         crs: L.CRS.Simple
     }, mapOptions );
+    let map = new L.Map( "leaflet-map-" + mapID , mapOptions); 
+    L.my_maps[ mapID ] = map;
+
     let img = new Image();
     img.onload = function(){
         let bounds = [[0,0], [img.height, img.width]];
         L.imageOverlay( mapSrc, bounds ).addTo( map );
-        map.fitBounds( bounds );
     };
     img.src = mapSrc;
 
