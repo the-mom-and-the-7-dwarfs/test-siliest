@@ -11,7 +11,7 @@ geojson:
     region: 'Bariatheel'
     name: 'Bariatheel'
     amenity: 'Città'
-    popupContent: 'La città più antica e grande di Grimor nonchè la sua la capitale politica ed economica.'
+    description: 'La città più antica e grande di Grimor nonchè la sua la capitale politica ed economica.'
   geometry:
     type: Point
     # latitude, longitude

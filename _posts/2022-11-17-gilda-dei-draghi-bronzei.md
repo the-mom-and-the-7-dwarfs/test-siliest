@@ -12,7 +12,7 @@ POIs:
     properties:
       name: 'Salamandra ubriaca'
       amenity: 'Taverna'
-      popupContent: 'Taverna della gilda dei Draghi Bronzei, gestita da Killian e, quand'esso non è presente, Pherin.'
+      description: 'Taverna della gilda dei Draghi Bronzei, gestita da Killian e, quand'esso non è presente, Pherin.'
     geometry:
       type: Point
       # latitude, longitude
@@ -21,7 +21,7 @@ POIs:
     properties:
       name: 'Distretto degli alloggi dei Draghi'
       amenity: 'Distretto'
-      popupContent: 'Distretto dedicato per la quasi totalità agli alloggi dei membri della gilda, oltre a loro vi sono altri piccoli negozi di viveri ed oggetti vari.'
+      description: 'Distretto dedicato per la quasi totalità agli alloggi dei membri della gilda, oltre a loro vi sono altri piccoli negozi di viveri ed oggetti vari.'
     geometry:
       type: Point
       # latitude, longitude
