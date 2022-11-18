@@ -1,11 +1,13 @@
 <div id="leaflet-map-{{ include.id }}" class="leaflet-map"></div>
 
 <script>
-((mapID, mapOptions, mapSrc, mapBounds) => {
+((mapID, mapOptions, mapSrc) => {
     if( !L.my_map ) L.my_maps = {};
     let map = new L.Map( "leaflet-map-" + mapID , mapOptions); 
     L.my_maps[ mapID ] = map;
-
+    mapOptions = Object.assign({
+        crs: L.CRS.Simple
+    }, mapOptions );
     let img = new Image();
     img.onload = function(){
         L.imageOverlay(
